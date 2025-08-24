@@ -1,0 +1,690 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.65">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.6px Menlo; color: #2a2c33; -webkit-text-stroke: #2a2c33; background-color: #f9f9f9}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.6px Menlo; color: #db3f39; -webkit-text-stroke: #db3f39; background-color: #f9f9f9}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.6px Menlo; color: #a75705; -webkit-text-stroke: #a75705; background-color: #f9f9f9}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.6px Menlo; color: #42933e; -webkit-text-stroke: #42933e; background-color: #f9f9f9}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.6px Menlo; color: #393939; -webkit-text-stroke: #393939; background-color: #f9f9f9}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.6px Menlo; color: #393939; -webkit-text-stroke: #393939; background-color: #f9f9f9; min-height: 15.0px}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.6px Menlo; color: #db3f39; -webkit-text-stroke: #db3f39}
+    span.s1 {font-kerning: none}
+    span.s2 {font-kerning: none; color: #2a2c33; -webkit-text-stroke: 0px #2a2c33}
+    span.s3 {font-kerning: none; color: #a75705; -webkit-text-stroke: 0px #a75705}
+    span.s4 {font-kerning: none; color: #42933e; -webkit-text-stroke: 0px #42933e}
+    span.s5 {font-kerning: none; color: #393939; -webkit-text-stroke: 0px #393939}
+    span.s6 {font-kerning: none; color: #db3f39; -webkit-text-stroke: 0px #db3f39}
+    span.s7 {font-kerning: none; color: #2a2c33; background-color: #f9f9f9; -webkit-text-stroke: 0px #2a2c33}
+    span.s8 {font-kerning: none; background-color: #f9f9f9}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p2"><span class="s2">&lt;</span><span class="s1">html </span><span class="s3">lang</span><span class="s2">=</span><span class="s4">"es"</span><span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2">&lt;</span><span class="s1">head</span><span class="s2">&gt;</span></p>
+<p class="p3"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;</span><span class="s6">meta </span><span class="s1">charset</span><span class="s2">=</span><span class="s4">"UTF-8"</span><span class="s2">&gt;</span></p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;</span><span class="s6">meta </span><span class="s3">name</span><span class="s2">=</span><span class="s1">"viewport"</span><span class="s6"> </span><span class="s3">content</span><span class="s2">=</span><span class="s1">"width=device-width, initial-scale=1.0"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;</span><span class="s6">title</span><span class="s2">&gt;</span><span class="s1">5 Pasos OIT - Juego Interactivo</span><span class="s2">&lt;/</span><span class="s6">title</span><span class="s2">&gt;</span></p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;</span><span class="s6">link </span><span class="s3">rel</span><span class="s2">=</span><span class="s1">"stylesheet"</span><span class="s6"> </span><span class="s3">href</span><span class="s2">=</span><span class="s1">"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"</span><span class="s2">&gt;</span></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;</span><span class="s1">style</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>* {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>padding: 0;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>:root {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>--primary: #1a237e;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>--primary-light: #534bae;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>--primary-dark: #000051;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>--secondary: #ff6f00;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>--secondary-light: #ffa040;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>--secondary-dark: #c43e00;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>--text-light: #ffffff;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>--text-dark: #333333;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>--success: #4caf50;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>--danger: #f44336;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>--warning: #ff9800;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>--info: #2196f3;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>body {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, var(--primary), var(--primary-dark));</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>min-height: 100vh;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>flex-direction: column;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>padding: 20px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--text-light);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.container {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>background-color: rgba(255, 255, 255, 0.95);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 20px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>width: 90%;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>max-width: 1000px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>padding: 30px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>margin: 20px 0;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--text-dark);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>header {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 30px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.logo {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>justify-content: center;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>gap: 15px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.logo-icon {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 2.5rem;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--secondary);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>h1 {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--primary);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 2.5rem;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>h2 {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--primary-light);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>margin: 15px 0;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 1.8rem;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>h3 {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--primary);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>margin: 15px 0 10px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 1.4rem;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>p {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>margin: 10px 0;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>line-height: 1.6;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>text-align: left;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.btn {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>background: linear-gradient(to right, var(--primary), var(--primary-light));</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>color: white;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>border: none;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>padding: 12px 25px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 50px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 1.1rem;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>margin: 15px 5px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>transition: all 0.3s ease;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>display: inline-flex;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>gap: 8px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.btn:hover {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>transform: translateY(-3px);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.btn:active {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>transform: translateY(1px);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.btn-secondary {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>background: linear-gradient(to right, var(--secondary), var(--secondary-light));</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.screens {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>position: relative;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>min-height: 500px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.screen {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>display: none;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>opacity: 0;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>transition: opacity 0.5s ease;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>position: absolute;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>top: 0;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>left: 0;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.screen.active {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>display: block;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>opacity: 1;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.welcome-screen {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.step-cards {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>display: grid;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>gap: 20px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>margin: 30px 0;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.step-card {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>background: white;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 15px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>padding: 20px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>transition: transform 0.3s ease;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>border-top: 5px solid var(--secondary);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.step-card:hover {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>transform: translateY(-5px);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.step-number {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>background-color: var(--primary);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>color: white;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>width: 40px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>height: 40px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 50%;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>justify-content: center;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0 auto 15px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: bold;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 1.2rem;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.game-container {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>flex-wrap: wrap;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>gap: 20px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>margin: 20px 0;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.game-board {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>flex: 1;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>min-width: 300px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>background: white;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 15px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>padding: 20px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.progress-container {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>margin: 20px 0;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.progress-bar {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>height: 10px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #e0e0e0;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 5px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>overflow: hidden;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.progress {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>height: 100%;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>background: linear-gradient(to right, var(--secondary), var(--secondary-light));</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>width: 0%;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>transition: width 0.5s ease;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.question {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 1.2rem;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: bold;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--primary);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.options {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>display: grid;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>grid-template-columns: 1fr;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>gap: 12px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.option {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #f5f5f5;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>padding: 15px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 10px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>transition: all 0.3s ease;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>border: 2px solid #ddd;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>text-align: left;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.option:hover {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #e8e8e8;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>border-color: var(--primary-light);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.option.correct {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #e8f5e9;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>border-color: var(--success);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.option.incorrect {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #ffebee;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>border-color: var(--danger);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.feedback {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>margin-top: 20px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>padding: 15px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 10px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>display: none;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>text-align: left;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.feedback.correct {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #e8f5e9;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>color: #2e7d32;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>border-left: 5px solid var(--success);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.feedback.incorrect {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #ffebee;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>color: #c62828;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>border-left: 5px solid var(--danger);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.score-container {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>justify-content: space-between;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>margin: 20px 0;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>background: linear-gradient(to right, var(--primary-light), var(--primary));</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>color: white;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>padding: 15px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 10px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.score-box {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.score-value {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 2rem;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: bold;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.completion-screen {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.trophy {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 5rem;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--secondary);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>margin: 20px 0;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>animation: bounce 1s infinite alternate;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>@keyframes bounce {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>from { transform: translateY(0); }</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>to { transform: translateY(-15px); }</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.badge {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>display: inline-block;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>background: linear-gradient(to right, var(--secondary), var(--secondary-light));</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>color: white;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>padding: 8px 15px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 20px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>margin: 5px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 0.9rem;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>.author {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>margin-top: 30px;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>font-style: italic;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>color: #666;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>@media (max-width: 768px) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>.game-container {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>flex-direction: column;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>.step-cards {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>grid-template-columns: 1fr;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;/</span><span class="s1">style</span><span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2">&lt;/</span><span class="s1">head</span><span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2">&lt;</span><span class="s1">body</span><span class="s2">&gt;</span></p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s1">"container"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">&lt;</span><span class="s6">header</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"logo"</span><span class="s2">&gt;</span></p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;</span><span class="s6">i </span><span class="s3">class</span><span class="s2">=</span><span class="s1">"fas fa-hard-hat logo-icon"</span><span class="s2">&gt;&lt;/</span><span class="s6">i</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;</span><span class="s6">h1</span><span class="s2">&gt;</span><span class="s1">5 Pasos OIT</span><span class="s2">&lt;/</span><span class="s6">h1</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">&lt;</span><span class="s6">p</span><span class="s2">&gt;</span><span class="s1">Juego interactivo para interiorizar la Guía de 5 Pasos de la OIT</span><span class="s2">&lt;/</span><span class="s6">p</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">&lt;/</span><span class="s6">header</span><span class="s2">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s1">"screens"</span><span class="s2">&gt;</span></p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s1">"screen welcome-screen active"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;</span><span class="s6">h2</span><span class="s2">&gt;</span><span class="s1">Bienvenido al Juego de los 5 Pasos</span><span class="s2">&lt;/</span><span class="s6">h2</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;</span><span class="s6">p</span><span class="s2">&gt;</span><span class="s1">Este juego te ayudará a interiorizar los conceptos de la Guía de 5 Pasos de la OIT para la identificación de peligros y evaluación de riesgos en el lugar de trabajo.</span><span class="s2">&lt;/</span><span class="s6">p</span><span class="s2">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"step-cards"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"step-card"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"step-number"</span><span class="s2">&gt;</span><span class="s1">1</span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">h3</span><span class="s2">&gt;</span><span class="s1">Identificar Peligros</span><span class="s2">&lt;/</span><span class="s6">h3</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">p</span><span class="s2">&gt;</span><span class="s1">Reconocer todo aquello que pueda causar daño en el lugar de trabajo.</span><span class="s2">&lt;/</span><span class="s6">p</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"step-card"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"step-number"</span><span class="s2">&gt;</span><span class="s1">2</span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">h3</span><span class="s2">&gt;</span><span class="s1">Evaluar Riesgos</span><span class="s2">&lt;/</span><span class="s6">h3</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">p</span><span class="s2">&gt;</span><span class="s1">Determinar la probabilidad e impacto de los peligros identificados.</span><span class="s2">&lt;/</span><span class="s6">p</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"step-card"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"step-number"</span><span class="s2">&gt;</span><span class="s1">3</span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">h3</span><span class="s2">&gt;</span><span class="s1">Controlar Riesgos</span><span class="s2">&lt;/</span><span class="s6">h3</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">p</span><span class="s2">&gt;</span><span class="s1">Implementar medidas para eliminar o minimizar los riesgos.</span><span class="s2">&lt;/</span><span class="s6">p</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"step-card"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"step-number"</span><span class="s2">&gt;</span><span class="s1">4</span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">h3</span><span class="s2">&gt;</span><span class="s1">Registrar Hallazgos</span><span class="s2">&lt;/</span><span class="s6">h3</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">p</span><span class="s2">&gt;</span><span class="s1">Documentar los resultados y las medidas implementadas.</span><span class="s2">&lt;/</span><span class="s6">p</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"step-card"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"step-number"</span><span class="s2">&gt;</span><span class="s1">5</span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">h3</span><span class="s2">&gt;</span><span class="s1">Revisar y Actualizar</span><span class="s2">&lt;/</span><span class="s6">h3</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">p</span><span class="s2">&gt;</span><span class="s1">Mantener actualizada la evaluación ante cambios en el entorno.</span><span class="s2">&lt;/</span><span class="s6">p</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;</span><span class="s6">button </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"btn btn-start"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;</span><span class="s6">i </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"fas fa-play"</span><span class="s2">&gt;&lt;/</span><span class="s6">i</span><span class="s2">&gt;</span><span class="s1"> Comenzar Juego</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;/</span><span class="s6">button</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s1">"screen game-screen"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;</span><span class="s6">h2</span><span class="s2">&gt;</span><span class="s1">Pregunta </span><span class="s2">&lt;</span><span class="s6">span </span><span class="s3">id</span><span class="s2">=</span><span class="s4">"question-number"</span><span class="s2">&gt;</span><span class="s1">1</span><span class="s2">&lt;/</span><span class="s6">span</span><span class="s2">&gt;</span><span class="s1"> de 10</span><span class="s2">&lt;/</span><span class="s6">h2</span><span class="s2">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s1">"progress-container"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"progress-bar"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"progress"</span><span class="s6"> </span><span class="s3">id</span><span class="s2">=</span><span class="s4">"progress-bar"</span><span class="s2">&gt;&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"game-container"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"game-board"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"question"</span><span class="s6"> </span><span class="s3">id</span><span class="s2">=</span><span class="s4">"question"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>¿Cuál es el objetivo principal de esta guía de la OIT?</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"options"</span><span class="s6"> </span><span class="s3">id</span><span class="s2">=</span><span class="s4">"options"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"option"</span><span class="s2">&gt;</span><span class="s1">Proporcionar un listado exhaustivo de todos los equipos de protección personal disponibles en el mercado.</span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"option"</span><span class="s2">&gt;</span><span class="s1">Ayudar a empleadores, trabajadores y sus representantes a realizar evaluaciones de riesgos en el lugar de trabajo.</span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"feedback"</span><span class="s6"> </span><span class="s3">id</span><span class="s2">=</span><span class="s4">"feedback"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>¡Correcto! La guía tiene como objetivo principal ayudar a empleadores, trabajadores y sus representantes a realizar evaluaciones de riesgos en el lugar de trabajo.</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                    </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"score-container"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"score-box"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s2">&lt;</span><span class="s6">div</span><span class="s2">&gt;</span><span class="s1">Puntuación</span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"score-value"</span><span class="s6"> </span><span class="s3">id</span><span class="s2">=</span><span class="s4">"score"</span><span class="s2">&gt;</span><span class="s1">0</span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"score-box"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s2">&lt;</span><span class="s6">div</span><span class="s2">&gt;</span><span class="s1">Preguntas</span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"score-value"</span><span class="s2">&gt;</span><span class="s1">10</span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;</span><span class="s6">button </span><span class="s3">class</span><span class="s2">=</span><span class="s1">"btn btn-next"</span><span class="s6"> </span><span class="s3">id</span><span class="s2">=</span><span class="s1">"next-btn"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;</span><span class="s6">i </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"fas fa-arrow-right"</span><span class="s2">&gt;&lt;/</span><span class="s6">i</span><span class="s2">&gt;</span><span class="s1"> Siguiente</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;/</span><span class="s6">button</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s1">"screen completion-screen"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"trophy"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;</span><span class="s6">i </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"fas fa-trophy"</span><span class="s2">&gt;&lt;/</span><span class="s6">i</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;</span><span class="s6">h2</span><span class="s2">&gt;</span><span class="s1">¡Felicidades!</span><span class="s2">&lt;/</span><span class="s6">h2</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;</span><span class="s6">p</span><span class="s2">&gt;</span><span class="s1">Has completado el juego de los 5 Pasos de la OIT</span><span class="s2">&lt;/</span><span class="s6">p</span><span class="s2">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s1">"score-container"</span><span class="s6"> </span><span class="s3">style</span><span class="s2">=</span><span class="s1">"justify-content: center;"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"score-box"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">div</span><span class="s2">&gt;</span><span class="s1">Puntuación Final</span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s1">"score-value"</span><span class="s6"> </span><span class="s3">id</span><span class="s2">=</span><span class="s1">"final-score"</span><span class="s2">&gt;</span><span class="s5">0</span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;</span><span class="s6">h3</span><span class="s2">&gt;</span><span class="s1">Conceptos Aprendidos</span><span class="s2">&lt;/</span><span class="s6">h3</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;</span><span class="s6">span </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"badge"</span><span class="s2">&gt;</span><span class="s1">Identificación de Peligros</span><span class="s2">&lt;/</span><span class="s6">span</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;</span><span class="s6">span </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"badge"</span><span class="s2">&gt;</span><span class="s1">Evaluación de Riesgos</span><span class="s2">&lt;/</span><span class="s6">span</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;</span><span class="s6">span </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"badge"</span><span class="s2">&gt;</span><span class="s1">Control de Riesgos</span><span class="s2">&lt;/</span><span class="s6">span</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;</span><span class="s6">span </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"badge"</span><span class="s2">&gt;</span><span class="s1">Registro de Hallazgos</span><span class="s2">&lt;/</span><span class="s6">span</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;</span><span class="s6">span </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"badge"</span><span class="s2">&gt;</span><span class="s1">Revisión Continua</span><span class="s2">&lt;/</span><span class="s6">span</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;</span><span class="s6">button </span><span class="s3">class</span><span class="s2">=</span><span class="s1">"btn btn-secondary btn-restart"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">&lt;</span><span class="s6">i </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"fas fa-redo"</span><span class="s2">&gt;&lt;/</span><span class="s6">i</span><span class="s2">&gt;</span><span class="s1"> Jugar de Nuevo</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s2">&lt;/</span><span class="s6">button</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">&lt;</span><span class="s6">div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"author"</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">&lt;</span><span class="s6">p</span><span class="s2">&gt;</span><span class="s1">Desarrollado para el programa de TIC para la Gestión y la Educación en Seguridad y Salud en el Trabajo - UNAB</span><span class="s2">&lt;/</span><span class="s6">p</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">&lt;</span><span class="s6">p</span><span class="s2">&gt;</span><span class="s1">Autor: Juan Gabriel Arboleda Taborda</span><span class="s2">&lt;/</span><span class="s6">p</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;/</span><span class="s6">div</span><span class="s2">&gt;</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;</span><span class="s1">script</span><span class="s2">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>// Datos del juego</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const questions = [</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>question: "¿Cuál es el objetivo principal de esta guía de la OIT?",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>correctAnswer: "Ayudar a empleadores, trabajadores y sus representantes a realizar evaluaciones de riesgos en el lugar de trabajo.",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>incorrectAnswer: "Proporcionar un listado exhaustivo de todos los equipos de protección personal disponibles en el mercado.",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>explanation: "La guía tiene como objetivo principal ayudar a empleadores, trabajadores y sus representantes a realizar evaluaciones de riesgos en el lugar de trabajo."</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>question: "Según el Paso 1, ¿qué se debe hacer para identificar los peligros?",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>correctAnswer: "Recorrer el lugar de trabajo, preguntar a los trabajadores y consultar las instrucciones de los fabricantes.",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>incorrectAnswer: "Realizar únicamente una encuesta anónima a los clientes de la empresa sobre su percepción de seguridad.",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>explanation: "Para identificar peligros, es esencial recorrer el lugar de trabajo, consultar con los trabajadores y revisar las instrucciones de los fabricantes."</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>question: "El Paso 2 consiste en:",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>correctAnswer: "Identificar qué grupos de personas (no nombres individuales) pueden sufrir daños y de qué manera.",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>incorrectAnswer: "Realizar un examen médico a cada trabajador para determinar su estado de salud actual.",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>explanation: "El Paso 2 se centra en identificar grupos de personas que pueden estar en riesgo y determinar la naturaleza de los posibles daños."</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>question: "Según la guía, la evaluación de riesgos es un proceso que se debe:",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>correctAnswer: "Considerar continuo y actualizar regularmente, especialmente cuando hay cambios.",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>incorrectAnswer: "Realizar una única vez al iniciar las operaciones de la empresa y archivarla.",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>explanation: "La evaluación de riesgos es un proceso continuo que debe actualizarse regularmente, especialmente cuando hay cambios en el lugar de trabajo."</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>question: "En el Paso 3, la jerarquía de medidas de control sugiere como PRIORIDAD:",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>correctAnswer: "Intentar eliminar el peligro de manera definitiva.",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>incorrectAnswer: "Comprar inmediatamente el equipo de protección personal más costoso para todos.",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>explanation: "La prioridad en el control de riesgos es siempre intentar eliminar el peligro de manera definitiva."</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>question: "¿Quiénes deben participar en el proceso de evaluación de riesgos?",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>correctAnswer: "Los empleadores en colaboración con los trabajadores y/o sus representantes.",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>incorrectAnswer: "Exclusivamente un experto externo contratado, sin involucrar a los trabajadores.",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>explanation: "El proceso debe involucrar a los empleadores en colaboración con los trabajadores y/o sus representantes."</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>question: "El Paso 4 recomienda, para las medidas de control adicionales:",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>correctAnswer: "Designar responsables y plazos para su implementación, creando un plan de acción.",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>incorrectAnswer: "Implementar todas las medidas al mismo tiempo, sin priorización y sin asignar responsables.",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>explanation: "Es crucial designar responsables y plazos para la implementación de medidas de control."</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>question: "En el Paso 5, se recomienda revisar formalmente la evaluación de riesgos:",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>correctAnswer: "Aproximadamente cada año, o antes si ocurre un cambio significativo.",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>incorrectAnswer: "Solo cuando ocurra un accidente grave en el lugar de trabajo.",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>explanation: "La evaluación debe revisarse formalmente cada año, o antes si ocurren cambios significativos."</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>question: "Según la guía, un 'peligro' se define como:",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>correctAnswer: "Cualquier cosa que pueda ocasionar un daño (productos químicos, electricidad, etc.).",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>incorrectAnswer: "La probabilidad estadística de que una empresa sea multada por inspección laboral.",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>explanation: "Un peligro es cualquier cosa que pueda ocasionar daño, como productos químicos, electricidad, etc."</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>question: "La guía menciona que mejorar la seguridad y la salud:",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>correctAnswer: "No implica necesariamente costos elevados; hay precauciones de bajo coste muy efectivas.",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>incorrectAnswer: "Siempre requiere una inversión económica grande en tecnología de última generación.",</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>explanation: "Mejorar la seguridad no siempre implica costos elevados; existen precauciones de bajo coste muy efectivas."</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>];</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>// Variables del juego</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>let currentQuestion = 0;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>let score = 0;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>let selectedOption = null;</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>// Elementos DOM</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const screens = document.querySelectorAll('.screen');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const startBtn = document.querySelector('.btn-start');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const nextBtn = document.getElementById('next-btn');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const restartBtn = document.querySelector('.btn-restart');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const questionElement = document.getElementById('question');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const optionsElement = document.getElementById('options');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const feedbackElement = document.getElementById('feedback');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const scoreElement = document.getElementById('score');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const finalScoreElement = document.getElementById('final-score');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const questionNumberElement = document.getElementById('question-number');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const progressBar = document.getElementById('progress-bar');</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>// Inicializar el juego</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>startBtn.addEventListener('click', startGame);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>nextBtn.addEventListener('click', nextQuestion);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>restartBtn.addEventListener('click', restartGame);</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>// Iniciar el juego</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>function startGame() {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>showScreen('game-screen');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>loadQuestion();</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>// Mostrar pantalla específica</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>function showScreen(screenClass) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>screens.forEach(screen =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>screen.classList.remove('active');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>document.querySelector(`.${screenClass}`).classList.add('active');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>// Cargar pregunta actual</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>function loadQuestion() {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const question = questions[currentQuestion];</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>questionElement.textContent = question.question;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>questionNumberElement.textContent = currentQuestion + 1;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>// Mezclar las respuestas</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const answers = [question.correctAnswer, question.incorrectAnswer];</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>if (Math.random() &gt; 0.5) answers.reverse();</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>optionsElement.innerHTML = '';</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>answers.forEach(answer =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>const option = document.createElement('div');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>option.classList.add('option');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>option.textContent = answer;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>option.addEventListener('click', () =&gt; selectOption(option, answer === question.correctAnswer));</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>optionsElement.appendChild(option);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>// Ocultar feedback y botón siguiente</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>feedbackElement.style.display = 'none';</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>nextBtn.style.display = 'none';</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>// Actualizar barra de progreso</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>progressBar.style.width = `${(currentQuestion / questions.length) * 100}%`;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>// Seleccionar opción</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>function selectOption(optionElement, isCorrect) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>if (selectedOption) return; // Evitar múltiples selecciones</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>selectedOption = optionElement;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const options = document.querySelectorAll('.option');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>options.forEach(option =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>option.removeEventListener('click', () =&gt; {});</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>option.style.cursor = 'default';</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>if (isCorrect) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>optionElement.classList.add('correct');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>score++;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>scoreElement.textContent = score;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>showFeedback(true, questions[currentQuestion].explanation);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>optionElement.classList.add('incorrect');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>// Marcar la respuesta correcta</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>options.forEach(option =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>if (option.textContent === questions[currentQuestion].correctAnswer) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>option.classList.add('correct');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>showFeedback(false, questions[currentQuestion].explanation);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>nextBtn.style.display = 'block';</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>// Mostrar retroalimentación</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>function showFeedback(isCorrect, explanation) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>feedbackElement.textContent = explanation;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>feedbackElement.className = 'feedback ' + (isCorrect ? 'correct' : 'incorrect');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>feedbackElement.style.display = 'block';</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>// Siguiente pregunta</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>function nextQuestion() {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>currentQuestion++;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>selectedOption = null;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>if (currentQuestion &lt; questions.length) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>loadQuestion();</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>endGame();</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>// Terminar el juego</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>function endGame() {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>finalScoreElement.textContent = `${score}/${questions.length}`;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>showScreen('completion-screen');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>// Reiniciar el juego</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>function restartGame() {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>currentQuestion = 0;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>score = 0;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>selectedOption = null;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>scoreElement.textContent = score;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>showScreen('welcome-screen');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;/</span><span class="s1">script</span><span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2">&lt;/</span><span class="s1">body</span><span class="s2">&gt;</span></p>
+<p class="p7"><span class="s7">&lt;/</span><span class="s8">html</span><span class="s7">&gt;</span></p>
+</body>
+</html>
